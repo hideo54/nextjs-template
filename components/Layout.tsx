@@ -19,6 +19,10 @@ const LogoH1 = styled.h1`
     position: relative;
 `;
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+const isIE = typeof window !== 'undefined' && window.document.documentMode;
+
 const NormalHeader = (
     <>
         <noscript>
@@ -28,6 +32,14 @@ const NormalHeader = (
                 本サイトは、JavaScriptが有効化されていない場合、正常に動作しません。
             </ColoredHeaderDiv>
         </noscript>
+        {isIE && (
+            <ColoredHeaderDiv backgroundColor='red'>
+                本サイトは Internet Explorer での利用を推奨しておりません。
+                <br />
+                {/* ぜひ <IconLink href='https://www.microsoft.com/ja-jp/edge' RightIcon={Open} color='white'>Microsoft Edge</IconLink> や <IconLink href='https://www.google.com/intl/ja_jp/chrome/' RightIcon={Open} color='white'>Google Chrome</IconLink> などのブラウザをお使いください。 */}
+                ぜひ Microsoft Edge や Google Chrome などのブラウザをお使いください。
+            </ColoredHeaderDiv>
+        )}
         <LogoH1>
             <Link href='/'>
                 <a>

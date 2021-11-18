@@ -9,6 +9,7 @@ const App: React.FC = () => {
     return (
         <Layout>
             <H2>Hello, world!</H2>
+            <p>こんにちは</p>
         </Layout>
     );
 };
