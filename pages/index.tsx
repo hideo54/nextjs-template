@@ -1,12 +1,15 @@
 import styled from 'styled-components';
+import Layout from '../components/Layout';
 
-const H1 = styled.h1`
+const H2 = styled.h1`
     text-align: center;
 `;
 
 const App: React.FC = () => {
     return (
-        <H1>Hello, world!</H1>
+        <Layout>
+            <H2>Hello, world!</H2>
+        </Layout>
     );
 };
 
