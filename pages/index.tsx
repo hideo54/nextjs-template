@@ -1,6 +1,12 @@
+import styled from 'styled-components';
+
+const H1 = styled.h1`
+    text-align: center;
+`;
+
 const App: React.FC = () => {
     return (
-        <h1>Hello, world!</h1>
+        <H1>Hello, world!</H1>
     );
 };
 
