@@ -14,3 +14,7 @@
 ## 注意点
 
 * hideo54 で検索し、適宜 placeholder を書き換えること。
+
+## create-next-app
+
+`create-next-app --use-npm --example https://github.com/hideo54/nextjs-template` すると楽かもしれない (言うほど楽か?)
