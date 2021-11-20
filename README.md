@@ -7,9 +7,9 @@
         * header には JS 無効化や IE への警告つき
     * Google Analytics
     * Google Fonts (San Francisco > ヒラギノ > Noto Sans Japanese)
-    * [@hideo54/reactor](https://github.com/hideo54/reactor)
 * TypeScript
 * styled-components
+* [@hideo54/reactor](https://github.com/hideo54/reactor)
 
 ## 注意点
 
