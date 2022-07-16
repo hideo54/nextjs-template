@@ -5,7 +5,6 @@ const minify = (s: string) => s.replace(/(\s{4}|\n)/g, '');
 
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
 
-// @ts-expect-error @types/react v18 problem
 export default class MyDocument extends Document {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     static async getInitialProps(ctx: any) {
